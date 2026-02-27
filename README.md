@@ -13,7 +13,7 @@
 
 ![Terraform Architecture 2](docs/terraform-2.jpg)
 
-<video src="docs/terraform-video.mp4" controls="controls" muted="muted" style="max-width: 100%;"></video>
+https://github.com/devopsexpertlearning/terraform-aws-enterprise-platform/raw/main/docs/terraform-video.mp4
 
 ## Standard Structure
 - `modules/`: reusable infrastructure modules.
