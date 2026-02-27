@@ -1,6 +1,19 @@
 # Terraform AWS Enterprise Platform
 
-Production-ready Terraform repository with reusable modules and separate environment roots.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=flat&logo=terraform&logoColor=white)](https://www.terraform.io/)
+[![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=flat&logo=amazon-aws&logoColor=white)](https://aws.amazon.com/)
+[![GitHub Repo](https://img.shields.io/badge/GitHub-Repository-181717?logo=github)](https://github.com/devopsexpertlearning/terraform-aws-enterprise-platform)
+
+> **Production-ready Terraform repository with reusable modules and separate environment roots.**
+
+## Architecture and Demo
+
+![Terraform Architecture 1](docs/terraform-1.jpg)
+
+![Terraform Architecture 2](docs/terraform-2.jpg)
+
+<video src="docs/terraform-video.mp4" controls="controls" muted="muted" style="max-width: 100%;"></video>
 
 ## Standard Structure
 - `modules/`: reusable infrastructure modules.
