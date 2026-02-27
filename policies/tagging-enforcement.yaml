@@ -1,0 +1,71 @@
+metadata:
+  name: "Require Enterprise Tags"
+  id: "CKV_ENT_1"
+  category: "CUSTOM"
+definition:
+  cond_type: "attribute"
+  resource_types:
+    - "aws_instance"
+    - "aws_vpc"
+    - "aws_s3_bucket"
+    - "aws_db_instance"
+    - "aws_eks_cluster"
+    - "aws_security_group"
+    - "aws_iam_role"
+  attribute: "tags.Project"
+  operator: "exists"
+  
+---
+metadata:
+  name: "Require Environment Tag"
+  id: "CKV_ENT_2"
+  category: "CUSTOM"
+definition:
+  cond_type: "attribute"
+  resource_types:
+    - "aws_instance"
+    - "aws_vpc"
+    - "aws_s3_bucket"
+    - "aws_db_instance"
+    - "aws_eks_cluster"
+    - "aws_security_group"
+    - "aws_iam_role"
+  attribute: "tags.Environment"
+  operator: "exists"
+
+---
+metadata:
+  name: "Require Owner Tag"
+  id: "CKV_ENT_3"
+  category: "CUSTOM"
+definition:
+  cond_type: "attribute"
+  resource_types:
+    - "aws_instance"
+    - "aws_vpc"
+    - "aws_s3_bucket"
+    - "aws_db_instance"
+    - "aws_eks_cluster"
+    - "aws_security_group"
+    - "aws_iam_role"
+  attribute: "tags.Owner"
+  operator: "exists"
+
+---
+metadata:
+  name: "Require ManagedBy Terraform Tag"
+  id: "CKV_ENT_4"
+  category: "CUSTOM"
+definition:
+  cond_type: "attribute"
+  resource_types:
+    - "aws_instance"
+    - "aws_vpc"
+    - "aws_s3_bucket"
+    - "aws_db_instance"
+    - "aws_eks_cluster"
+    - "aws_security_group"
+    - "aws_iam_role"
+  attribute: "tags.ManagedBy"
+  operator: "equals"
+  value: "Terraform"
