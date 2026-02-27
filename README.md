@@ -13,7 +13,9 @@
 
 ![Terraform Architecture 2](docs/terraform-2.jpg)
 
-[![Watch demo video](docs/terraform-2.jpg)](docs/terraform-video.mp4)
+**Demo Video**
+
+![Terraform Demo](docs/terraform-video.gif)
 
 ## Standard Structure
 - `modules/`: reusable infrastructure modules.
@@ -72,4 +74,7 @@ Note: For remote S3 backend, `backend.hcl` uses `use_lockfile = true` and does n
 Change only these files per environment:
 - `backend.hcl` (if using remote state: bucket/key/region/lockfile)
 - `terraform.tfvars` (region, CIDRs, AMI, instance size, tags, ARNs)
+
+
+
 
